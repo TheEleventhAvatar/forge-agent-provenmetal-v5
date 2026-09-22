@@ -1,0 +1,4 @@
+Reference,MPN,Quantity,Description
+U1,ESP8266EX,1,WiFi module
+U2,ATMEGA328P-AU,1,Microcontroller
+U3,LM7805CT,1,Voltage regulator

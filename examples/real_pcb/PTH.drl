@@ -1,0 +1,11 @@
+M48
+;DRILL file generated for ForgeBoard
+METRIC
+T1C0.15
+T2C0.80
+%
+T1
+X15.00Y15.00
+T2
+X5.00Y5.00
+M30

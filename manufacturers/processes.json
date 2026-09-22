@@ -1,0 +1,5 @@
+{
+  "US-PROTO-1": {"name":"US Prototype Fab", "min_trace_mm":0.15,"min_clearance_mm":0.15,"min_drill_mm":0.20,"max_layers":6,"max_board_mm":[300,400]},
+  "FINE-PITCH-1": {"name":"Fine Pitch Fabricator", "min_trace_mm":0.10,"min_clearance_mm":0.10,"min_drill_mm":0.15,"max_layers":8,"max_board_mm":[400,500]},
+  "ASSEMBLY-1": {"name":"US Prototype Fab + Assembly", "min_trace_mm":0.15,"min_clearance_mm":0.15,"min_drill_mm":0.20,"max_layers":6,"max_board_mm":[300,400],"min_package":"0402"}
+}
