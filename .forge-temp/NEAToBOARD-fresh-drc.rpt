@@ -1,0 +1,2045 @@
+** Drc report for NEAToBOARD_ESP32.kicad_pcb **
+** Created on 2026-09-23T18:13:22 **
+** Report includes: Errors, Warnings **
+
+** Found 523 DRC violations **
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 129.4900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 129.4900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 129.4900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 129.4900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 128.8900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 128.8900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 128.8900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 128.8900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 128.2900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 128.2900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 128.2900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 128.2900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 127.6900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 127.6900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.1800 mm)
+    Local override; error
+    @(201.5144 mm, 91.9544 mm): Pad 1 [<no net>] of 201 on B.Cu
+    @(200.6994 mm, 91.9544 mm): Pad 2 [<no net>] of 201 on B.Cu
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 127.6900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 127.6900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 127.0900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(185.9700 mm, 127.0900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 127.0900 mm): NPTH pad of U12
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(187.6700 mm, 127.0900 mm): NPTH pad of U12
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 129.4900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 129.4900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 129.4900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 129.4900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 128.8900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 128.8900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 128.8900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 128.8900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 128.2900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 128.2900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 128.2900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 84.5900 mm): NPTH pad of U13
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 128.2900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 84.5900 mm): NPTH pad of U13
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 127.6900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 85.1900 mm): NPTH pad of U13
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 127.6900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 85.1900 mm): NPTH pad of U13
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 85.7900 mm): NPTH pad of U13
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 127.6900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 85.7900 mm): NPTH pad of U13
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 127.6900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 86.3900 mm): NPTH pad of U13
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 127.0900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 86.3900 mm): NPTH pad of U13
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(176.7700 mm, 127.0900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 86.9900 mm): NPTH pad of U13
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 127.0900 mm): NPTH pad of U14
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(193.7700 mm, 86.9900 mm): NPTH pad of U13
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.4700 mm, 127.0900 mm): NPTH pad of U14
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 86.9900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 86.9900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 86.9900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 86.9900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 86.3900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 86.3900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 86.9900 mm): NPTH pad of U16
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 86.3900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 86.3900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 86.9900 mm): NPTH pad of U16
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 86.3900 mm): NPTH pad of U16
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 86.3900 mm): NPTH pad of U16
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 85.7900 mm): NPTH pad of U16
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 85.7900 mm): NPTH pad of U16
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 85.7900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 85.7900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 85.7900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 85.1900 mm): NPTH pad of U16
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 85.1900 mm): NPTH pad of U16
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 84.5900 mm): NPTH pad of U16
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 84.5900 mm): NPTH pad of U16
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 85.7900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 85.1900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 85.1900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 85.1900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 85.1900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 84.5900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 84.5900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 84.5900 mm): NPTH pad of U9
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 84.5900 mm): NPTH pad of U9
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 108.9900 mm): NPTH pad of U5
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 108.9900 mm): NPTH pad of U5
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 108.3900 mm): NPTH pad of U5
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 108.3900 mm): NPTH pad of U5
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 107.7900 mm): NPTH pad of U5
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 107.7900 mm): NPTH pad of U5
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 107.1900 mm): NPTH pad of U5
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 107.1900 mm): NPTH pad of U5
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 106.5900 mm): NPTH pad of U5
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 106.5900 mm): NPTH pad of U5
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 86.9900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 129.4900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 86.9900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 86.9900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 129.4900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 86.9900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 129.4900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 86.3900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 129.4900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 86.3900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 128.8900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 86.3900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 128.8900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 128.8900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 128.8900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 86.3900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 128.2900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 128.2900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 85.7900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 128.2900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 128.2900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 85.7900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 127.6900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 85.7900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 127.6900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 85.7900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 127.6900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 85.1900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 127.6900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 85.1900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 127.0900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 85.1900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(150.9700 mm, 127.0900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 85.1900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 127.0900 mm): NPTH pad of U6
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 84.5900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(152.6700 mm, 127.0900 mm): NPTH pad of U6
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(178.2700 mm, 84.5900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 84.5900 mm): NPTH pad of U10
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(179.9700 mm, 84.5900 mm): NPTH pad of U10
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2453 mm)
+    Rule: board setup constraints hole; error
+    @(153.6653 mm, 128.5239 mm): Pad 4 [3V3] of SW3 on F.Cu
+    @(152.6700 mm, 129.4900 mm): NPTH pad of U6
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2453 mm)
+    Rule: board setup constraints hole; error
+    @(153.6653 mm, 128.5239 mm): Pad 4 [3V3] of SW3 on F.Cu
+    @(152.6700 mm, 128.8900 mm): NPTH pad of U6
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2453 mm)
+    Rule: board setup constraints hole; error
+    @(153.6653 mm, 128.5239 mm): Pad 4 [3V3] of SW3 on F.Cu
+    @(152.6700 mm, 128.2900 mm): NPTH pad of U6
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.2453 mm)
+    Rule: board setup constraints hole; error
+    @(153.6653 mm, 128.5239 mm): Pad 4 [3V3] of SW3 on F.Cu
+    @(152.6700 mm, 127.6900 mm): NPTH pad of U6
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(160.7200 mm, 129.4900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 129.4900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(162.4200 mm, 129.4900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 129.4900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(160.7200 mm, 128.8900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 129.4900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(162.4200 mm, 128.8900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(160.7200 mm, 128.2900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 129.4900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(192.8600 mm, 107.7900 mm): NPTH pad of H3
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(162.4200 mm, 128.2900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 128.8900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(192.8600 mm, 107.7900 mm): NPTH pad of H3
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(160.7200 mm, 127.6900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 128.8900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.0639 mm, 134.3910 mm): NPTH pad of SW2
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 86.9900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 106.5900 mm): NPTH pad of U8
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 128.8900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(112.0639 mm, 134.3910 mm): NPTH pad of SW2
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(162.4200 mm, 127.6900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 128.8900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 106.5900 mm): NPTH pad of U8
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(109.0667 mm, 134.3910 mm): NPTH pad of SW2
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 86.9900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(160.7200 mm, 127.0900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(109.0667 mm, 134.3910 mm): NPTH pad of SW2
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 128.2900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 107.1900 mm): NPTH pad of U8
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 86.9900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(162.4200 mm, 127.0900 mm): NPTH pad of U15
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 107.1900 mm): NPTH pad of U8
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 86.9900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 128.2900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 107.7900 mm): NPTH pad of U8
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 86.3900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 128.2900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 107.7900 mm): NPTH pad of U8
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 86.3900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 128.2900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 108.3900 mm): NPTH pad of U8
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 86.3900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 127.6900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 108.3900 mm): NPTH pad of U8
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 86.3900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 127.6900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 108.9900 mm): NPTH pad of U8
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 85.7900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 127.6900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 85.7900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 127.6900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.2600 mm, 108.9900 mm): NPTH pad of U8
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 127.0900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 85.7900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(196.1500 mm, 127.0900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 85.7900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 127.0900 mm): NPTH pad of U11
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 85.1900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 85.1900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(197.8500 mm, 127.0900 mm): NPTH pad of U11
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 85.1900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 85.1900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 84.5900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(165.9700 mm, 84.5900 mm): NPTH pad of U7
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[hole_clearance]: Hole clearance violation (board setup constraints hole clearance 0.2500 mm; actual 0.0000 mm)
+    Rule: board setup constraints hole; error
+    @(167.6700 mm, 84.5900 mm): NPTH pad of U7
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[shorting_items]: Items shorting two nets (nets <no net> and Net-(D29-K))
+    Local override; error
+    @(200.7210 mm, 103.8240 mm): Polygon [<no net>] of JP4 on F.Cu
+    @(201.0210 mm, 104.2240 mm): Pad 1 [Net-(D29-K)] of JP4 on F.Cu
+[shorting_items]: Items shorting two nets (nets <no net> and GND)
+    Local override; error
+    @(200.7210 mm, 103.8240 mm): Polygon [<no net>] of JP4 on F.Cu
+    @(201.0210 mm, 102.9240 mm): Pad 2 [GND] of JP4 on F.Cu
+[shorting_items]: Items shorting two nets (nets <no net> and Net-(JP3-Pad1))
+    Local override; error
+    @(139.6713 mm, 133.0396 mm): Polygon [<no net>] of JP3 on F.Cu
+    @(139.3713 mm, 132.6396 mm): Pad 1 [Net-(JP3-Pad1)] of JP3 on F.Cu
+[clearance]: Clearance violation ( clearance 0.2000 mm; actual 0.0000 mm)
+    Local override; error
+    @(139.3713 mm, 133.9396 mm): Pad 2 [IO2] of JP3 on F.Cu
+    @(139.6713 mm, 133.0396 mm): Polygon [<no net>] of JP3 on F.Cu
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(130.7305 mm, 107.9450 mm): Footprint U4
+    @(108.0297 mm, 114.2756 mm): Footprint J21
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(130.7305 mm, 107.9450 mm): Footprint U4
+    @(112.6200 mm, 119.2900 mm): Footprint H2
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(112.6200 mm, 119.2900 mm): NPTH pad of H2
+    @(130.7305 mm, 107.9450 mm): Footprint U4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(130.7305 mm, 107.9450 mm): Footprint U4
+    @(112.6200 mm, 96.2900 mm): Footprint H1
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(112.6200 mm, 96.2900 mm): NPTH pad of H1
+    @(130.7305 mm, 107.9450 mm): Footprint U4
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(127.9683 mm, 82.9828 mm): Footprint D3
+    @(130.6873 mm, 82.9510 mm): Footprint Q2
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(164.4032 mm, 135.5911 mm): Footprint D23
+    @(167.0032 mm, 135.5887 mm): Footprint D12
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(169.5932 mm, 128.7259 mm): Footprint D21
+    @(172.1990 mm, 128.7160 mm): Footprint D27
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(169.5932 mm, 128.7259 mm): Footprint D21
+    @(166.9832 mm, 128.7367 mm): Footprint D22
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(172.1990 mm, 128.7160 mm): Footprint D27
+    @(174.8432 mm, 128.6677 mm): Footprint D14
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(174.7632 mm, 125.3111 mm): Footprint D17
+    @(172.1832 mm, 125.2987 mm): Footprint D19
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(174.7632 mm, 125.3111 mm): Footprint D17
+    @(174.8700 mm, 121.7100 mm): Footprint R15
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(169.7990 mm, 121.7138 mm): Footprint R13
+    @(169.5613 mm, 125.3211 mm): Footprint D10
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(169.5932 mm, 135.5902 mm): Footprint D20
+    @(172.2032 mm, 135.5777 mm): Footprint D13
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(169.5932 mm, 135.5902 mm): Footprint D20
+    @(167.0032 mm, 135.5887 mm): Footprint D12
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(172.1832 mm, 125.2987 mm): Footprint D19
+    @(169.5613 mm, 125.3211 mm): Footprint D10
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(172.1832 mm, 125.2987 mm): Footprint D19
+    @(172.3400 mm, 121.7100 mm): Footprint R14
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(165.9700 mm, 86.9900 mm): NPTH pad of U7
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(165.9700 mm, 86.3900 mm): NPTH pad of U7
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(165.9700 mm, 85.7900 mm): NPTH pad of U7
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+    @(154.2200 mm, 90.6000 mm): Footprint J20
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(152.6700 mm, 86.9900 mm): NPTH pad of U9
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(152.6700 mm, 86.3900 mm): NPTH pad of U9
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(152.6700 mm, 85.7900 mm): NPTH pad of U9
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(174.7832 mm, 135.5894 mm): Footprint D25
+    @(172.2032 mm, 135.5777 mm): Footprint D13
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(172.1713 mm, 132.2177 mm): Footprint D16
+    @(169.5832 mm, 132.2069 mm): Footprint D9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(172.1713 mm, 132.2177 mm): Footprint D16
+    @(174.7745 mm, 132.2144 mm): Footprint D26
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(166.9832 mm, 128.7367 mm): Footprint D22
+    @(164.3859 mm, 128.7387 mm): Footprint D24
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(166.9832 mm, 132.2067 mm): Footprint D15
+    @(169.5832 mm, 132.2069 mm): Footprint D9
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(166.9832 mm, 132.2067 mm): Footprint D15
+    @(164.3932 mm, 132.1977 mm): Footprint D18
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(167.2532 mm, 121.7099 mm): Footprint R12
+    @(166.9732 mm, 125.3087 mm): Footprint D11
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(164.4000 mm, 125.2900 mm): Footprint D8
+    @(166.9732 mm, 125.3087 mm): Footprint D11
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(164.4000 mm, 125.2900 mm): Footprint D8
+    @(164.6697 mm, 121.7081 mm): Footprint R11
+[courtyards_overlap]: Courtyards overlap
+    Rule: board setup constraints courtyard; error
+    @(169.5613 mm, 125.3211 mm): Footprint D10
+    @(166.9732 mm, 125.3087 mm): Footprint D11
+[npth_inside_courtyard]: NPTH inside courtyard
+    Local override; error
+    @(162.4200 mm, 129.4900 mm): NPTH pad of U15
+    @(164.3859 mm, 128.7387 mm): Footprint D24
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3696 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.0311 mm, 81.6028 mm): Track [GND] on F.Cu, length 2.3282 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3696 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.0311 mm, 92.0336 mm): Track [GND] on F.Cu, length 3.1918 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3612 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.0227 mm, 84.8370 mm): Track [GND] on F.Cu, length 3.1496 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3612 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.0227 mm, 87.9866 mm): Track [GND] on F.Cu, length 0.6107 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4697 mm)
+    Rule: board setup constraints edge; error
+    @(105.0364 mm, 91.4800 mm): Arc on Edge.Cuts
+    @(105.0964 mm, 92.9683 mm): Track [GND] on F.Cu, length 1.3219 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3696 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.3419 mm, 81.2920 mm): Track [GND] on F.Cu, length 0.4396 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3612 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.4799 mm, 84.3798 mm): Track [GND] on F.Cu, length 0.6466 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3696 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.0311 mm, 83.9310 mm): Track [GND] on F.Cu, length 0.6347 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3696 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.0311 mm, 88.8418 mm): Track [GND] on F.Cu, length 0.5988 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4702 mm)
+    Rule: board setup constraints edge; error
+    @(178.6200 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(179.4902 mm, 136.5586 mm): Via [GND] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4986 mm)
+    Rule: board setup constraints edge; error
+    @(152.8200 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(153.7186 mm, 136.8667 mm): Via [GND] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4755 mm)
+    Rule: board setup constraints edge; error
+    @(150.8200 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(149.9445 mm, 117.8532 mm): Via [GND] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4061 mm)
+    Rule: board setup constraints edge; error
+    @(105.5364 mm, 81.3236 mm): Segment on Edge.Cuts
+    @(106.3419 mm, 81.2920 mm): Via [GND] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4850 mm)
+    Rule: board setup constraints edge; error
+    @(150.8200 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(149.9445 mm, 117.8532 mm): Track [GND] on B.Cu, length 0.3755 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4850 mm)
+    Rule: board setup constraints edge; error
+    @(150.8200 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(150.2100 mm, 118.1187 mm): Track [GND] on B.Cu, length 15.4363 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4850 mm)
+    Rule: board setup constraints edge; error
+    @(150.8200 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(150.2100 mm, 133.5551 mm): Track [GND] on B.Cu, length 1.1340 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4566 mm)
+    Rule: board setup constraints edge; error
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(186.5003 mm, 101.3216 mm): Track [MISO] on F.Cu, length 4.0591 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4566 mm)
+    Rule: board setup constraints edge; error
+    @(151.3240 mm, 100.2360 mm): Arc on Edge.Cuts
+    @(150.7875 mm, 101.3216 mm): Track [MISO] on F.Cu, length 35.7127 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3903 mm)
+    Rule: board setup constraints edge; error
+    @(152.8200 mm, 120.6700 mm): Segment on Edge.Cuts
+    @(153.6104 mm, 120.8634 mm): Via [3V3] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4700 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 137.7900 mm): Segment on Edge.Cuts
+    @(167.6700 mm, 136.9200 mm): Via [Net-(D12-K)] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3650 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 137.7900 mm): Segment on Edge.Cuts
+    @(172.5650 mm, 137.0250 mm): Via [Net-(D10-A)] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4100 mm)
+    Rule: board setup constraints edge; error
+    @(162.5700 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(163.3800 mm, 134.0300 mm): Via [Net-(D10-K)] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3900 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 137.7900 mm): Segment on Edge.Cuts
+    @(164.6000 mm, 137.0000 mm): Via [Net-(D11-K)] on F.Cu - B.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4235 mm)
+    Rule: board setup constraints edge; error
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(189.3855 mm, 111.7610 mm): Track [I39] on F.Cu, length 4.0736 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4235 mm)
+    Rule: board setup constraints edge; error
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(186.5050 mm, 114.6415 mm): Track [I39] on F.Cu, length 36.4083 mm
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0513 mm)
+    Rule: board setup constraints edge; error
+    @(160.0700 mm, 137.7900 mm): Segment on Edge.Cuts
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.0513 mm)
+    Rule: board setup constraints edge; error
+    @(160.0700 mm, 137.7900 mm): Segment on Edge.Cuts
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3104 mm)
+    Rule: board setup constraints edge; error
+    @(162.5700 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(163.6784 mm, 136.3159 mm): Pad 1 [Net-(D11-K)] of D23 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3341 mm)
+    Rule: board setup constraints edge; error
+    @(176.6200 mm, 118.0100 mm): Segment on Edge.Cuts
+    @(175.4879 mm, 124.5863 mm): Pad 2 [Net-(D11-K)] of D17 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3141 mm)
+    Rule: board setup constraints edge; error
+    @(176.6200 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(175.5079 mm, 134.8646 mm): Pad 2 [Net-(D10-A)] of D25 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3139 mm)
+    Rule: board setup constraints edge; error
+    @(162.5700 mm, 118.0100 mm): Segment on Edge.Cuts
+    @(163.6752 mm, 126.0148 mm): Pad 1 [Net-(D14-A)] of D8 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3004 mm)
+    Rule: board setup constraints edge; error
+    @(162.5700 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(163.6684 mm, 132.9225 mm): Pad 1 [Net-(D10-K)] of D18 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2704 mm)
+    Rule: board setup constraints edge; error
+    @(160.5700 mm, 120.6780 mm): Segment on Edge.Cuts
+    @(159.6996 mm, 124.0770 mm): Pad 1 [Net-(J13-Pin_1)] of SW5 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.3227 mm)
+    Rule: board setup constraints edge; error
+    @(176.6200 mm, 130.7400 mm): Segment on Edge.Cuts
+    @(175.4993 mm, 131.4896 mm): Pad 2 [Net-(D10-K)] of D26 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.2453 mm)
+    Rule: board setup constraints edge; error
+    @(152.8200 mm, 120.6700 mm): Segment on Edge.Cuts
+    @(153.6653 mm, 124.2015 mm): Pad 3 [3V3] of SW3 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4670 mm)
+    Rule: board setup constraints edge; error
+    @(152.3200 mm, 130.2400 mm): Arc of U6 on Edge.Cuts
+    @(153.6653 mm, 128.5239 mm): Pad 4 [3V3] of SW3 on F.Cu
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4900 mm)
+    Rule: board setup constraints edge; error
+    @(185.3200 mm, 120.1700 mm): Segment on Edge.Cuts
+    @(184.2800 mm, 121.5100 mm): PTH pad 1 [Net-(J12-Pin_1)] of J12
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4900 mm)
+    Rule: board setup constraints edge; error
+    @(185.3200 mm, 120.1700 mm): Segment on Edge.Cuts
+    @(181.7400 mm, 121.5100 mm): PTH pad 2 [Net-(D7-A)] of J12
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(153.3200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(156.7600 mm, 94.3100 mm): PTH pad 1 [SCL] of J31
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(153.3200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(159.3000 mm, 94.3100 mm): PTH pad 2 [SDA] of J31
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(153.3200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(161.8400 mm, 94.3100 mm): PTH pad 3 [ALT] of J31
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4600 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 117.5100 mm): Segment on Edge.Cuts
+    @(164.6100 mm, 118.8200 mm): PTH pad 1 [Net-(J11-Pin_1)] of J11
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4600 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 117.5100 mm): Segment on Edge.Cuts
+    @(167.1500 mm, 118.8200 mm): PTH pad 2 [Net-(J11-Pin_2)] of J11
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4600 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 117.5100 mm): Segment on Edge.Cuts
+    @(169.6900 mm, 118.8200 mm): PTH pad 3 [Net-(J11-Pin_3)] of J11
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4600 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 117.5100 mm): Segment on Edge.Cuts
+    @(172.2300 mm, 118.8200 mm): PTH pad 4 [Net-(J11-Pin_4)] of J11
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4600 mm)
+    Rule: board setup constraints edge; error
+    @(176.1200 mm, 117.5100 mm): Segment on Edge.Cuts
+    @(174.7700 mm, 118.8200 mm): PTH pad 5 [Net-(J11-Pin_5)] of J11
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(177.6200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(174.2500 mm, 94.3100 mm): PTH pad 1 [SDA] of J27
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(177.6200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(171.7100 mm, 94.3100 mm): PTH pad 2 [SCL] of J27
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(193.1200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(191.9600 mm, 94.3100 mm): PTH pad 1 [MISO] of J28
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(193.1200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(189.4200 mm, 94.3100 mm): PTH pad 2 [SCK] of J28
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(193.1200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(186.8800 mm, 94.3100 mm): PTH pad 3 [CS] of J28
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(193.1200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(184.3400 mm, 94.3100 mm): PTH pad 4 [MOSI] of J28
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4000 mm)
+    Rule: board setup constraints edge; error
+    @(193.1200 mm, 95.5600 mm): Segment on Edge.Cuts
+    @(181.8000 mm, 94.3100 mm): PTH pad 5 [DC] of J28
+[copper_edge_clearance]: Board edge clearance violation (board setup constraints edge clearance 0.5000 mm; actual 0.4907 mm)
+    Rule: board setup constraints edge; error
+    @(160.5700 mm, 120.6780 mm): Segment on Edge.Cuts
+    @(159.2293 mm, 121.5900 mm): PTH pad 1 [Net-(J13-Pin_1)] of J13
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+    @(163.9855 mm, 111.7610 mm): PTH pad 11 [GND] of J6
+[starved_thermal]: Thermal relief connection to zone incomplete (layer B.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(206.8446 mm, 74.2868 mm): Zone [GND] on B.Cu, priority 0
+    @(161.4455 mm, 111.7610 mm): PTH pad 12 [GND] of J6
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(122.4915 mm, 84.8019 mm): Pad 2 [GND] of C2 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(143.8912 mm, 83.8458 mm): Pad 2 [GND] of C8 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(154.2252 mm, 134.3956 mm): Pad 2 [GND] of R17 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(110.4500 mm, 87.7361 mm): Pad 5 [GND] of J1 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(193.6421 mm, 132.8361 mm): Pad 1 [GND] of C12 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(184.4400 mm, 124.2655 mm): Pad 4 [GND] of SW4 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(124.6550 mm, 134.4800 mm): Pad 1 [GND] of D4 on F.Cu
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; 1 spokes connected to isolated island)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(179.2255 mm, 111.7610 mm): PTH pad 5 [GND] of J6
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(176.6705 mm, 104.1918 mm): PTH pad 6 [GND] of J7
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(166.5105 mm, 104.1918 mm): PTH pad 10 [GND] of J7
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(163.9705 mm, 104.1918 mm): PTH pad 11 [GND] of J7
+[starved_thermal]: Thermal relief connection to zone incomplete (layer F.Cu; zone min spoke count 2; actual 1)
+    Local override; error
+    @(208.7154 mm, 70.4271 mm): Zone [GND] on F.Cu, priority 0
+    @(190.0200 mm, 133.5000 mm): PTH pad 1 [GND] of J26
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(200.7210 mm, 103.8240 mm): Polygon [<no net>] of JP4 on F.Cu
+    @(201.0210 mm, 104.2240 mm): Pad 1 [Net-(D29-K)] of JP4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(200.7210 mm, 103.8240 mm): Polygon [<no net>] of JP4 on F.Cu
+    @(201.0210 mm, 102.9240 mm): Pad 2 [GND] of JP4 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(139.6713 mm, 133.0396 mm): Polygon [<no net>] of JP3 on F.Cu
+    @(139.3713 mm, 132.6396 mm): Pad 1 [Net-(JP3-Pad1)] of JP3 on F.Cu
+[solder_mask_bridge]: Front solder mask aperture bridges items with different nets
+    Rule: board setup solder mask min width; error
+    @(139.6713 mm, 133.0396 mm): Polygon [<no net>] of JP3 on F.Cu
+    @(139.3713 mm, 133.9396 mm): Pad 2 [IO2] of JP3 on F.Cu
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(176.6601 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(161.4709 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(169.1163 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(158.9055 mm, 112.8532 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(158.9055 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(171.6309 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(181.6893 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(186.8455 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(189.4255 mm, 112.8278 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(156.3909 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(184.3055 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(184.3055 mm, 112.8278 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(166.4747 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(179.3017 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(176.6347 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(174.2217 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(163.9855 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(171.6055 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(189.4255 mm, 100.4580 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(169.1163 mm, 112.8278 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(181.7655 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(174.2217 mm, 112.8278 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(186.8455 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(156.3909 mm, 100.5723 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(166.5255 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(179.3017 mm, 112.8278 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(163.9855 mm, 112.8278 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(161.4709 mm, 114.7963 mm): Segment on B.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(189.4655 mm, 115.4694 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0000 mm, 88.2400 mm): Segment on Edge.Cuts
+    @(197.6800 mm, 99.1400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(156.3909 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(150.8200 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(150.3300 mm, 116.6400 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(184.3055 mm, 103.0996 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(161.4709 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(163.9855 mm, 115.4948 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(176.6347 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(150.8200 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(150.3300 mm, 119.2500 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(186.8455 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(158.9055 mm, 115.5202 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(184.3055 mm, 115.4694 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(161.4709 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(179.3017 mm, 103.0996 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(156.3909 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(186.8455 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(169.1163 mm, 103.0996 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(171.6055 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(166.5001 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(176.6601 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0000 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(197.6800 mm, 121.8700 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(158.9055 mm, 103.0996 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(166.5509 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(150.8200 mm, 88.2400 mm): Segment on Edge.Cuts
+    @(150.3300 mm, 96.5200 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(189.4655 mm, 103.0996 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(179.3017 mm, 115.4694 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0000 mm, 88.2400 mm): Segment on Edge.Cuts
+    @(197.6800 mm, 96.5000 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(150.8200 mm, 88.2400 mm): Segment on Edge.Cuts
+    @(150.3300 mm, 99.1700 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0000 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(197.6800 mm, 119.2300 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(174.2217 mm, 103.1250 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0000 mm, 125.8400 mm): Segment on Edge.Cuts
+    @(197.6800 mm, 116.5900 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(181.6893 mm, 101.1692 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(171.6309 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(169.1163 mm, 115.4694 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(181.7655 mm, 115.3805 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(195.6100 mm, 115.1900 mm): Segment on Edge.Cuts
+    @(174.2217 mm, 115.4694 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(198.0000 mm, 88.2400 mm): Segment on Edge.Cuts
+    @(197.6800 mm, 93.9700 mm): Segment on F.Silkscreen
+[silk_edge_clearance]: Silkscreen clipped by board edge
+    Rule: board setup constraints silk; warning
+    @(151.3200 mm, 100.7400 mm): Segment on Edge.Cuts
+    @(163.9855 mm, 103.0996 mm): Segment on F.Silkscreen
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(130.6999 mm, 122.9228 mm): Footprint C10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(133.3219 mm, 122.9164 mm): Footprint C9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(114.1575 mm, 80.7624 mm): Footprint R2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(123.2185 mm, 119.3115 mm): Footprint C6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(142.5554 mm, 87.9697 mm): Footprint R4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(141.8624 mm, 82.8229 mm): Footprint R5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(122.4915 mm, 85.8394 mm): Footprint C2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(136.0203 mm, 132.0666 mm): Footprint R8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(123.2185 mm, 121.3016 mm): Footprint C7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(137.3998 mm, 91.7003 mm): Footprint R1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(127.8740 mm, 127.6402 mm): Footprint U3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(131.6073 mm, 127.5598 mm): Footprint C4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(124.4123 mm, 127.5598 mm): Footprint C5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(122.4915 mm, 89.6478 mm): Footprint C1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(135.9949 mm, 134.4288 mm): Footprint D5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(130.7305 mm, 107.9450 mm): Footprint U4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(110.8603 mm, 125.5692 mm): Footprint J4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(127.9683 mm, 82.9828 mm): Footprint D3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(138.8182 mm, 87.9697 mm): Footprint Q1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(130.6873 mm, 82.9510 mm): Footprint Q2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(143.8912 mm, 82.8083 mm): Footprint C8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(132.0069 mm, 119.7656 mm): Footprint Y1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(114.1625 mm, 85.6235 mm): Footprint F1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(148.4534 mm, 134.3569 mm): Footprint J5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.4032 mm, 135.5911 mm): Footprint D23
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(169.5932 mm, 128.7259 mm): Footprint D21
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(159.3092 mm, 133.4001 mm): Footprint R10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(172.1990 mm, 128.7160 mm): Footprint D27
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.7632 mm, 125.3111 mm): Footprint D17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(169.7990 mm, 121.7138 mm): Footprint R13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(201.0228 mm, 107.7931 mm): Footprint D29
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(169.5932 mm, 135.5902 mm): Footprint D20
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(154.2060 mm, 80.4300 mm): Footprint R15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.3830 mm, 80.4300 mm): Footprint R16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(172.1832 mm, 125.2987 mm): Footprint D19
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(154.2230 mm, 87.5899 mm): Footprint J19
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.8432 mm, 128.6677 mm): Footprint D14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.7832 mm, 135.5894 mm): Footprint D25
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(172.1713 mm, 132.2177 mm): Footprint D16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(166.9832 mm, 128.7367 mm): Footprint D22
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(166.9832 mm, 132.2067 mm): Footprint D15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(154.2252 mm, 133.3956 mm): Footprint R17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(108.3932 mm, 102.7599 mm): Footprint R18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(167.2532 mm, 121.7099 mm): Footprint R12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.4000 mm, 125.2900 mm): Footprint D8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(107.3213 mm, 97.8167 mm): Footprint D28
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(172.2032 mm, 135.5777 mm): Footprint D13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(169.5832 mm, 132.2069 mm): Footprint D9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(169.5613 mm, 125.3211 mm): Footprint D10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.3859 mm, 128.7387 mm): Footprint D24
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(166.9732 mm, 125.3087 mm): Footprint D11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(167.0032 mm, 135.5887 mm): Footprint D12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.3932 mm, 132.1977 mm): Footprint D18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(173.0200 mm, 85.8600 mm): Footprint J22
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(173.0100 mm, 91.0400 mm): Footprint J23
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(129.5177 mm, 90.1964 mm): Footprint U2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.6697 mm, 121.7081 mm): Footprint R11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(196.2600 mm, 107.7900 mm): Footprint U8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(166.8200 mm, 85.7900 mm): Footprint U7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(110.5653 mm, 134.3910 mm): Footprint SW2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(192.8600 mm, 107.7900 mm): Footprint H3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(158.5996 mm, 126.2795 mm): Footprint SW5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(143.7914 mm, 124.9220 mm): Footprint R9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(141.1582 mm, 91.7097 mm): Footprint Q3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(197.0000 mm, 128.2900 mm): Footprint U11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(161.5700 mm, 128.2900 mm): Footprint U15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(182.9900 mm, 83.5300 mm): Footprint J25
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(139.3713 mm, 133.2896 mm): Footprint JP3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(186.8200 mm, 128.2900 mm): Footprint U12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(191.9100 mm, 128.1400 mm): Footprint D6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.7745 mm, 132.2144 mm): Footprint D26
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(130.8385 mm, 134.4796 mm): Footprint D2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(154.7653 mm, 126.3500 mm): Footprint SW3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(108.0297 mm, 114.2756 mm): Footprint J21
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(154.2200 mm, 90.6000 mm): Footprint J20
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(151.8200 mm, 128.2900 mm): Footprint U6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(179.1200 mm, 85.7900 mm): Footprint U10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(125.6800 mm, 132.1200 mm): Footprint R7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(130.8385 mm, 132.1174 mm): Footprint R3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(197.8500 mm, 107.7900 mm): Footprint U5
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(139.6294 mm, 124.9980 mm): Footprint R6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(136.9500 mm, 82.9500 mm): Footprint SW1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(112.6200 mm, 119.2900 mm): Footprint H2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(108.6500 mm, 86.4400 mm): Footprint J1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(193.6421 mm, 133.8736 mm): Footprint C12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(137.4114 mm, 126.7460 mm): Footprint JP2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(172.3400 mm, 121.7100 mm): Footprint R14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(201.0210 mm, 103.5740 mm): Footprint JP4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(125.6569 mm, 83.0082 mm): Footprint D1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(201.0300 mm, 112.7100 mm): Footprint R20
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(197.8500 mm, 85.7900 mm): Footprint U16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(116.7180 mm, 91.3551 mm): Footprint U1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(112.6200 mm, 96.2900 mm): Footprint H1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(181.8000 mm, 90.6000 mm): Footprint J24
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(141.7294 mm, 124.9680 mm): Footprint C11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(137.4114 mm, 123.1580 mm): Footprint JP1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.8700 mm, 121.7100 mm): Footprint R15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(151.8200 mm, 85.7900 mm): Footprint U9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(182.3421 mm, 135.8741 mm): Footprint R16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(183.3400 mm, 126.4394 mm): Footprint SW4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(193.7700 mm, 85.7900 mm): Footprint U13
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(106.1249 mm, 102.7581 mm): Footprint R19
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(151.5555 mm, 107.8856 mm): Footprint LOGO2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(125.6800 mm, 134.4800 mm): Footprint D4
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(113.1968 mm, 91.3440 mm): Footprint C3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(148.5155 mm, 81.3056 mm): Footprint J8
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(180.0951 mm, 126.4703 mm): Footprint D7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(177.6200 mm, 128.2900 mm): Footprint U14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(118.2655 mm, 128.7536 mm): Footprint J2
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(159.3201 mm, 79.6700 mm): Footprint J14
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(189.3855 mm, 111.7610 mm): Footprint J6
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(189.3705 mm, 104.1918 mm): Footprint J7
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(201.6026 mm, 128.7536 mm): Footprint J17
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(201.6026 mm, 84.7029 mm): Footprint J18
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(182.5657 mm, 80.2478 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(184.2800 mm, 121.5100 mm): Footprint J12
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(114.9381 mm, 106.9096 mm): Footprint LOGO1
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(156.7600 mm, 94.3100 mm): Footprint J31
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(118.2645 mm, 84.7029 mm): Footprint J3
+[lib_footprint_mismatch]: Footprint 'R_0805_2012Metric_Pad1.20x1.40mm_HandSolder' does not match copy in library 'Resistor_SMD'
+    Local override; warning
+    @(201.1577 mm, 103.7868 mm): Footprint 805
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(164.6100 mm, 118.8200 mm): Footprint J11
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.2500 mm, 94.3100 mm): Footprint J27
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(191.9600 mm, 94.3100 mm): Footprint J28
+[lib_footprint_mismatch]: Footprint 'R_0201_0603Metric_Pad0.64x0.40mm_HandSolder' does not match copy in library 'Resistor_SMD'
+    Local override; warning
+    @(201.1069 mm, 91.9544 mm): Footprint 201
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(183.4478 mm, 128.7789 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(159.2293 mm, 121.5900 mm): Footprint J13
+[lib_footprint_mismatch]: Footprint 'R_0603_1608Metric_Pad0.98x0.95mm_HandSolder' does not match copy in library 'Resistor_SMD'
+    Local override; warning
+    @(201.1476 mm, 99.5556 mm): Footprint 603
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(155.3510 mm, 80.2915 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(190.6537 mm, 128.1882 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.2558 mm, 135.4671 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(193.6680 mm, 121.5200 mm): Footprint J9
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(174.3102 mm, 79.6700 mm): Footprint J29
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(190.0100 mm, 121.5300 mm): Footprint J10
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(155.0996 mm, 128.1375 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(190.0200 mm, 133.5000 mm): Footprint J26
+[lib_footprint_mismatch]: Footprint 'R_0402_1005Metric_Pad0.72x0.64mm_HandSolder' does not match copy in library 'Resistor_SMD'
+    Local override; warning
+    @(201.1174 mm, 95.5662 mm): Footprint 402
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(156.6794 mm, 133.4961 mm): Footprint J16
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(181.7592 mm, 133.4985 mm): Footprint J15
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(170.3073 mm, 80.1829 mm): Footprint LOGO3
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(189.4507 mm, 79.6677 mm): Footprint J30
+[lib_footprint_issues]: The current configuration does not include the footprint library 'HalfMarble'
+    Local override; warning
+    @(201.1417 mm, 107.6047 mm): Footprint LOGO3
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(105.9755 mm, 110.4956 mm): PCB text 'DO NOT TOUCH!' on B.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.6000 mm)
+    Rule: board setup constraints silk text height; warning
+    @(193.7336 mm, 123.4979 mm): PCB text 'DOUT' on F.Silkscreen
+[text_height]: Text height out of range (board setup constraints silk text height min height 0.8000 mm; actual 0.7500 mm)
+    Rule: board setup constraints silk text height; warning
+    @(110.1311 mm, 110.4368 mm): PCB text 'DO NOT TOUCH!' on F.Silkscreen
+[silk_over_copper]: Silkscreen clipped by solder mask
+    Local override; warning
+    @(105.2201 mm, 94.0846 mm): Rectangle on B.Silkscreen
+    @(112.6200 mm, 96.2900 mm): NPTH pad of H1
+[mirrored_text_on_front_layer]: Mirrored text on front layer
+    Local override; warning
+    @(135.9229 mm, 108.2363 mm): PCB text 'JLCJLCJLCJLC' on F.Silkscreen
+
+** Found 20 unconnected pads **
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(156.8070 mm, 102.1083 mm): Track [SDA] on B.Cu, length 6.2481 mm
+    @(159.3000 mm, 94.3100 mm): PTH pad 2 [SDA] of J31
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(164.3800 mm, 81.4300 mm): Track [SDA] on F.Cu, length 0.0030 mm
+    @(172.4808 mm, 89.3950 mm): Track [SDA] on F.Cu, length 4.8800 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(155.3599 mm, 103.2012 mm): Track [SCL] on B.Cu, length 5.1158 mm
+    @(156.7600 mm, 94.3100 mm): PTH pad 1 [SCL] of J31
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(159.3000 mm, 90.6000 mm): PTH pad 3 [SCL] of J20
+    @(171.4808 mm, 84.5150 mm): Track [SCL] on F.Cu, length 4.8800 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(150.7875 mm, 101.3216 mm): Track [MISO] on F.Cu, length 35.7127 mm
+    @(191.9600 mm, 94.3100 mm): Track [MISO] on F.Cu, length 3.7100 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(144.0903 mm, 102.8456 mm): Track [MOSI] on F.Cu, length 36.3140 mm
+    @(184.3400 mm, 94.3100 mm): Track [MOSI] on F.Cu, length 3.7100 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(147.2011 mm, 85.1600 mm): Track [3V3] on F.Cu, length 1.8588 mm
+    @(156.9860 mm, 82.2100 mm): Track [3V3] on F.Cu, length 3.9315 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(153.6653 mm, 124.2015 mm): Track [3V3] on F.Cu, length 4.3224 mm
+    @(148.4534 mm, 131.8169 mm): Track [3V3] on F.Cu, length 4.3408 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(161.6030 mm, 82.2100 mm): Track [3V3] on F.Cu, length 3.9315 mm
+    @(173.5200 mm, 84.4350 mm): Track [3V3] on F.Cu, length 1.4348 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(185.5300 mm, 83.5300 mm): PTH pad 2 [3V3] of J25
+    @(173.5200 mm, 83.0002 mm): Track [3V3] on F.Cu, length 1.1175 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(189.4507 mm, 82.2077 mm): PTH pad 2 [3V3] of J30
+    @(185.5300 mm, 83.5300 mm): PTH pad 2 [3V3] of J25
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(193.6421 mm, 134.9111 mm): Track [3V3] on F.Cu, length 2.4931 mm
+    @(201.6026 mm, 131.2936 mm): Track [3V3] on F.Cu, length 2.2203 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(201.6026 mm, 89.6449 mm): Track [3V3] on F.Cu, length 2.4020 mm
+    @(189.4507 mm, 82.2077 mm): PTH pad 2 [3V3] of J30
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(150.5321 mm, 102.3376 mm): Track [CS] on F.Cu, length 31.9042 mm
+    @(186.8800 mm, 94.3100 mm): Track [CS] on F.Cu, length 3.7100 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(179.2105 mm, 105.7953 mm): Track [DC] on B.Cu, length 1.6035 mm
+    @(181.8000 mm, 94.3100 mm): Track [DC] on F.Cu, length 3.7100 mm
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(159.8890 mm, 105.7332 mm): Track [ALT] on B.Cu, length 2.1799 mm
+    @(161.8400 mm, 94.3100 mm): PTH pad 3 [ALT] of J31
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(107.4125 mm, 89.9400 mm): PTH pad 6 [unconnected-(J1-Shield-Pad6)] of J1
+    @(110.1125 mm, 88.9400 mm): PTH pad 6 [unconnected-(J1-Shield-Pad6)] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.1125 mm, 83.9400 mm): PTH pad 6 [unconnected-(J1-Shield-Pad6)] of J1
+    @(107.4125 mm, 82.9400 mm): PTH pad 6 [unconnected-(J1-Shield-Pad6)] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(110.1125 mm, 88.9400 mm): PTH pad 6 [unconnected-(J1-Shield-Pad6)] of J1
+    @(110.1125 mm, 83.9400 mm): PTH pad 6 [unconnected-(J1-Shield-Pad6)] of J1
+[unconnected_items]: Missing connection between items
+    Local override; error
+    @(150.6598 mm, 101.8296 mm): Track [SCK] on F.Cu, length 33.8085 mm
+    @(189.4200 mm, 94.3100 mm): Track [SCK] on F.Cu, length 3.7100 mm
+
+** Found 0 Footprint errors **
+
+** Ignored checks **
+    - Footprint has no courtyard defined
+    - Track endpoint not centered on via
+    - Tuning profile track geometries
+    - Footprint doesn't match symbol's footprint filters
+    - Footprint component type doesn't match footprint pads
+
+** End of Report **

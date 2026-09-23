@@ -28,6 +28,13 @@ class ManufacturerMatch(BaseModel):
     score: float
     blockers: list[str]
     satisfied: list[str]
+    status: Literal["PASS", "FAIL", "CONDITIONAL", "UNKNOWN"] = "UNKNOWN"
+    reasons: list[str] = Field(default_factory=list)
+    evidence: list[dict[str, Any]] = Field(default_factory=list)
+    conditions: list[dict[str, Any]] = Field(default_factory=list)
+    unknowns: list[str] = Field(default_factory=list)
+    sources: list[str] = Field(default_factory=list)
+    capabilities: list[dict[str, Any]] = Field(default_factory=list)
 
 class ManufacturingPlan(BaseModel):
     status: str
@@ -40,3 +47,6 @@ class AnalysisResult(BaseModel):
     manufacturers: list[ManufacturerMatch]
     trace: list[AgentStep]
     metrics: dict[str, Any]
+    manufacturing_plan: dict[str, Any] = Field(default_factory=dict)
+    quote_scenarios: list[dict[str, Any]] = Field(default_factory=list)
+    validation: dict[str, Any] = Field(default_factory=dict)

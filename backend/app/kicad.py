@@ -24,6 +24,11 @@ class PCBModel:
     bounds: dict[str, float] | None = None
     min_trace_mm: float | None = None
     min_drill_mm: float | None = None
+    copper_layers: list[str] = field(default_factory=list)
+    board_thickness_mm: float | None = None
+    material: str | None = None
+    copper_thickness_by_layer_mm: dict[str, float] = field(default_factory=dict)
+    solder_mask_color: str | None = None
 
 
 def _blocks(text: str, token: str) -> list[str]:
@@ -96,6 +101,21 @@ def _layers(block: str) -> list[str]:
 
 def _parse_kicad_text(name: str, text: str) -> PCBModel:
     model = PCBModel(file=name)
+    layer_blocks = _blocks(text, "layers")
+    if layer_blocks:
+        model.copper_layers = re.findall(r'\(\d+\s+"((?:F|B|In\d+)\.Cu)"\s+(?:signal|power)', layer_blocks[0])
+    general_blocks = _blocks(text, "general")
+    if general_blocks:
+        thickness = re.search(r'\(thickness\s+([\d.]+)\)', general_blocks[0])
+        if thickness: model.board_thickness_mm = float(thickness.group(1))
+    stackups = _blocks(text, "stackup")
+    if stackups:
+        for layer, value in re.findall(r'\(layer\s+"([^"]+)"\s+\(type\s+"copper"\)\s+\(thickness\s+([\d.]+)\)', stackups[0]):
+            model.copper_thickness_by_layer_mm[layer] = float(value)
+        materials = re.findall(r'\(material\s+"([^"]+)"\)', stackups[0])
+        if materials: model.material = materials[0]
+        colors = re.findall(r'\(layer\s+"[FB]\.Mask"\s+\(type\s+"[^"]+"\)\s+\(color\s+"([^"]+)"\)', stackups[0])
+        if colors: model.solder_mask_color = colors[0]
     for block in _blocks(text, "net"):
         match = re.match(r'\(net\s+(\d+)\s+"([^"]*)"', block)
         if match:
@@ -106,7 +126,8 @@ def _parse_kicad_text(name: str, text: str) -> PCBModel:
         reference = reference_match.group(1) if reference_match else f"FP{index}"
         value_match = re.search(r'\(property\s+"Value"\s+"([^"]+)"', block) or re.search(r'\(fp_text\s+value\s+"([^"]+)"', block)
         x, y, footprint_angle = _at(block)
-        model.footprints.append({"reference": reference, "value": value_match.group(1) if value_match else "", "x": x, "y": y, "rotation_deg": footprint_angle, "layer": _atom(block, "layer")})
+        library_match = re.match(r'\(footprint\s+"([^"]+)"', block)
+        model.footprints.append({"reference": reference, "value": value_match.group(1) if value_match else "", "library_id": library_match.group(1) if library_match else None, "x": x, "y": y, "rotation_deg": footprint_angle, "layer": _atom(block, "layer")})
         for pad_index, pad in enumerate(_blocks(block, "pad"), 1):
             head = re.match(r'\(pad\s+"([^"]*)"\s+([^\s)]+)', pad)
             if not head:
@@ -123,7 +144,11 @@ def _parse_kicad_text(name: str, text: str) -> PCBModel:
             drill = _number(pad, "drill")
             pad_layers = _layers(pad)
             raw_size_x, raw_size_y = (float(size.group(1)), float(size.group(2))) if size else (0.0, 0.0)
-            orientation = math.radians(footprint_angle + pad_angle)
+            # In KiCad board files the pad angle in `(at x y angle)` is
+            # already an absolute board-frame orientation.  Only the pad
+            # position is footprint-local and rotated by the footprint.
+            orientation = math.radians(pad_angle)
+            shape = re.search(r'\(pad\s+"[^"]*"\s+[^\s)]+\s+([^\s)]+)', pad).group(1)
             # Axis-aligned envelope of a rotated rectangular pad.  It remains
             # conservative without pretending unsupported custom pads are exact.
             size_x = abs(raw_size_x * math.cos(orientation)) + abs(raw_size_y * math.sin(orientation))
@@ -134,7 +159,13 @@ def _parse_kicad_text(name: str, text: str) -> PCBModel:
             item = {"id": pad_id, "reference": reference, "number": number, "type": pad_type,
                     "x": pad_x, "y": pad_y, "size_x_mm": size_x,
                     "size_y_mm": size_y, "drill_mm": drill, "layers": pad_layers,
-                    "layer": pad_layers[0] if pad_layers else "", "net": net, "net_name": net_name}
+                    "layer": pad_layers[0] if pad_layers else "", "net": net, "net_name": net_name,
+                    "shape": shape, "rotation_deg": pad_angle % 360,
+                    "size_x_local_mm": raw_size_x, "size_y_local_mm": raw_size_y,
+                    "roundrect_rratio": _number(pad, "roundrect_rratio", 0.25),
+                    # Retain custom pad primitives verbatim so later geometry
+                    # work can refine them without reparsing the source board.
+                    "custom_primitives": _blocks(pad, "gr_poly") + _blocks(pad, "gr_line") + _blocks(pad, "gr_arc") + _blocks(pad, "gr_circle") + _blocks(pad, "gr_rect") + _blocks(pad, "gr_curve")}
             model.pads.append(item)
             model.layers.update(pad_layers)
             if drill > 0:
