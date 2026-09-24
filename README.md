@@ -2,6 +2,12 @@
 
 **Agentic PCB manufacturing review engine** â€” Gerber, Excellon, KiCad PCB and BOM inputs with deterministic geometry checks, MPN completeness checks, sourced manufacturer capability matching, and an inspectable agent trace.
 
+
+
+https://github.com/user-attachments/assets/8f0b3421-51b5-40ef-82c3-3a1e90176aed
+
+
+
 ## What this demonstrates
 
 `real PCB files â†’ real parsing â†’ real geometry â†’ deterministic DFM results â†’ real BOM reasoning â†’ manufacturer capability matching â†’ agent trace`
