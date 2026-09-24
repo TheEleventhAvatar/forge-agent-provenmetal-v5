@@ -24,6 +24,16 @@ def finding(rule="PAD_CLEARANCE", ids=None):
 
 
 class DrcParsingTests(unittest.TestCase):
+    def test_real_neatoboard_violation_and_unconnected_totals_stay_separate(self):
+        from pathlib import Path
+        fixture=Path(__file__).resolve().parents[2]/'NEAToBOARD_ESP32-drc.rpt'
+        parsed=parse_drc_report(fixture.read_text(encoding='utf-8',errors='replace'))
+        self.assertEqual(parsed['violation_count'],523)
+        self.assertEqual(parsed['unconnected_item_count'],20)
+        self.assertEqual(parsed['total_diagnostics'],543)
+        self.assertEqual(len(parsed['violations']),523)
+        self.assertEqual(len(parsed['unconnected_items']),20)
+
     def test_unconnected_items_are_separate_from_drc_violations(self):
         report="""** Found 2 DRC violations **
 [clearance]: Clearance violation (clearance 0.2 mm; actual 0.1 mm)

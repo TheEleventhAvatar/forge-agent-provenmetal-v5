@@ -4,7 +4,7 @@
 
 ## What this demonstrates
 
-`real PCB files â†’ real parsing â†’ real geometry â†’ real DFM violations â†’ real BOM reasoning â†’ manufacturer capability matching â†’ agent trace`
+`real PCB files â†’ real parsing â†’ real geometry â†’ deterministic DFM results â†’ real BOM reasoning â†’ manufacturer capability matching â†’ agent trace`
 
 ### Pipeline
 
@@ -46,9 +46,9 @@ curl.exe -X POST http://localhost:8000/analyze `
 
 The results include deterministic geometry findings and source-backed capability outcomes. Capability checks may be conditional or unknown when process inputs such as copper weight are absent.
 
-## Production parser upgrade
+## Broader parser coverage
 
-The fixture parser intentionally stays small so its behavior is transparent. For broader Gerber X2/X3 and Excellon coverage, replace `backend/app/parsers.py` with an adapter around **Gerbonara** or **PyGerber**. Gerbonara explicitly supports Gerber and Excellon and is available for Python 3.12+; PyGerber provides a modern Gerber parser/rendering API.
+The fixture parser intentionally stays small so its behavior is transparent. For broader Gerber X2/X3 and Excellon coverage, `backend/app/parsers.py` could be adapted to a maintained Gerber/Excellon parser such as **Gerbonara** or **PyGerber**. Parser behavior should be checked against project fixtures before replacing the current deterministic path.
 
 ## Why the LLM is not the DFM calculator
 
@@ -104,9 +104,9 @@ The native KiCad path builds a structured PCB model containing nets, tracks, pad
 
 Pipeline:
 
-`KiCad -> PCB model -> spatial DFM -> BOM risk -> manufacturer capability -> resolution options -> quote scenarios -> agent trace`
+`KiCad -> PCB model -> spatial DFM + DRC validation -> BOM completeness -> public capability evidence -> condition-aware process assessment -> simulated quote scenario -> agent trace`
 
-Manufacturer capability matching now uses the officially sourced, conditioned JLCPCB and PCBWay entries described below. No prices, availability, or lead times are inferred.
+Manufacturer process assessment uses the officially sourced, conditioned JLCPCB and PCBWay capability entries described below. No prices, inventory, availability, or lead times are inferred.
 
 ## Validation Architecture
 
@@ -116,7 +116,7 @@ Manufacturer capability matching now uses the officially sourced, conditioned JL
 4. **Manufacturer capability matching** compares available geometric measurements to published profile values and their conditions. Results are `PASS`, `FAIL`, `CONDITIONAL`, or `UNKNOWN`; unknown inputs never become a pass.
 5. **Provenance** accompanies each capability value with its official source URL, title, retrieval date, and concise source wording. The UI exposes that evidence.
 
-KiCad and ForgeAgent finding totals are independent and should not be compared as a single pass/fail count. KiCad DRC also checks electrical and design rules outside ForgeAgent's manufacturing DFM scope.
+KiCad reports unconnected items separately from ordinary DRC violations. On the NEAToBOARD fixture, KiCad reports 523 violation records and 20 unconnected-item records, for 543 diagnostic records total. Only the 523 violation records participate in ForgeAgent object-level DRC cross-validation. ForgeAgent reports 0 geometry violations on this fixture. These tools have different rule coverage; the additional KiCad diagnostics are not contradictions.
 
 ## Manufacturer Capability Sources
 
@@ -142,10 +142,10 @@ Capability Evaluation
 â†“
 Evidence / Provenance
 â†“
-Manufacturing Route
+Manufacturing Feasibility Assessment
 ```
 
-The current process set includes JLCPCB Standard PCB, Economic PCBA and Standard PCBA, plus PCBWay Standard PCB and Advanced PCB. Fabrication, assembly and component procurement receive separate statuses. The knowledge base can be inspected at `GET /manufacturers`; it records source URL/title/evidence, retrieval and verification date, capability type, conditions, and source status. Verification dates are manually recorded, not automatically refreshed. Capability claims are sourced from JLCPCB's [PCB capability](https://jlcpcb.com/capabilities/Capab), [assembly capability](https://jlcpcb.com/capabilities/pcb-assembly-capabilities), [SMD spacing](https://jlcpcb.com/help/article/minimum-spacing-for-smd-components), [PCB dimensions](https://jlcpcb.com/help/article/pcb-dimensions), and [API access](https://jlcpcb.com/help/article/jlcpcb-online-api-available-now) pages; and PCBWay's [standard capability](https://www.pcbway.com/capabilities.html) and [advanced capability](https://www.pcbway.com/advanced-pcb-capabilities.html) pages. The SMD-spacing help page was not independently available during retrieval; no extra claims are attributed to it.
+The configured process profiles include JLCPCB Standard PCB, Economic PCBA and Standard PCBA, plus PCBWay Standard PCB and Advanced PCB. Fabrication, assembly and component procurement receive separate statuses. The knowledge base can be inspected at `GET /manufacturers`; it records source URL/title/evidence, retrieval and verification date, capability type, conditions, and source status. Verification dates are manually recorded, not automatically refreshed. Capability claims are sourced from JLCPCB's [PCB capability](https://jlcpcb.com/capabilities/Capab), [assembly capability](https://jlcpcb.com/capabilities/pcb-assembly-capabilities), [SMD spacing](https://jlcpcb.com/help/article/minimum-spacing-for-smd-components), [PCB dimensions](https://jlcpcb.com/help/article/pcb-dimensions), and [API access](https://jlcpcb.com/help/article/jlcpcb-online-api-available-now) pages; and PCBWay's [standard capability](https://www.pcbway.com/capabilities.html) and [advanced capability](https://www.pcbway.com/advanced-pcb-capabilities.html) pages. The SMD-spacing help page was not independently available during retrieval; no extra claims are attributed to it.
 
 Pricing/inventory integration is `NOT_CONNECTED`. Quote scenarios remain `SIMULATED`; no actual prices, availability, lead times or supplier acceptance are asserted. Published capability, ForgeAgent's deterministic comparison, illustrative estimates and live quotes are distinct data types and claims.
 
@@ -157,6 +157,31 @@ Capability coverage is now computed over parameter-level applicable checks: docu
 
 The JLCPCB Standard PCB unknown for component-hole spacing is specifically a source-semantics issue: the official capability page gives “Pad Hole-to-Hole Spacing” as 0.45 mm but does not state whether the value is center-to-center or edge-to-edge. ForgeAgent measures center-to-center spacing, so it does not compare unlike definitions. PCBWay Advanced unknowns include undocumented minimum dimensions, via diameter and PTH annular ring; trace/space claims are documented only for special copper/layer/partial-feature conditions that do not match this 2-layer, nominal 1 oz board; the advanced via-spacing claim is limited to vias up to 0.45 mm while the measured minimum via diameter is 0.60 mm. PCBWay Standard unknowns are via diameter, via-hole spacing, via/PTH annular ring and component-hole spacing. These unknowns are not failures.
 
-NEAToBOARD extracted requirements: board 100 × 60 mm (derived from Edge.Cuts), 2 copper layers (measured from declared stack), 1.6 mm thickness (measured), FR-4 (measured), outer copper nominal 1.0 oz equivalent (derived from declared 0.035 mm copper thickness), minimum trace 0.25 mm (measured), minimum net-aware spacing 0.1995 mm (derived), minimum drill/via hole 0.30 mm (measured), minimum via diameter 0.60 mm (measured), via hole center spacing 1.0912 mm (derived), component-hole center spacing 0.60 mm (derived), via annular ring 0.15 mm and drilled PTH annular ring 0.225 mm (derived), 0201 smallest recognized passive package (derived), recognized IC pin spacing 0.9473 mm (derived), through vias (derived), CNC drill (derived), green solder mask (read from the KiCad stackup). Inner copper weight and BGA pitch are unknown/not applicable respectively. Package and IC pitch extraction depend on recognized footprint library names and should be treated as derived prototype measurements.
+NEAToBOARD extracted requirements are shown with field-level quality in the UI. Package recognition is name-based and incomplete: the 0201 passive package field is METADATA_DERIVED from the KiCad footprint identifier, not a complete IPC/package-recognition result. IC pin spacing is GEOMETRY_DERIVED from pad centers. A missing inner copper declaration is UNKNOWN; BGA spacing is NOT_APPLICABLE only when no BGA footprint is detected. The per-board normalized requirement object is the source of displayed values and measurement basis.
 
 The official JLCPCB assembly page presents different package thresholds in its table and FAQ (0402 for Economic, 0201 for Standard, and a separate statement supporting 01005 without explicit process scope). Those package claims are marked TYPICAL and evaluated conservatively; the Economic package outcome remains CONDITIONAL rather than asserting a hard failure. PCBWay Advanced component-hole spacing provenance points to the official advanced capability page. No capability values are sourced from third-party aggregators; the JLCPCB SMD-spacing help page is not used because it was not independently verified.
+
+
+## Example: NEAToBOARD
+
+This fixture shows the difference between KiCad design-rule validation and ForgeAgent manufacturing feasibility:
+
+```text
+Real KiCad board
+↓
+100 × 60 mm / 2 layers / 1.6 mm FR-4
+↓
+ForgeAgent geometry analysis: 0 geometry violations
+↓
+KiCad DRC: 523 violations / 20 unconnected items / 543 total diagnostics
+↓
+Normalized manufacturing requirements with measurement quality
+↓
+Publicly sourced manufacturer capability evidence
+↓
+Condition-aware process comparisons
+↓
+Documented Manufacturing Feasibility Assessment
+```
+
+For example, the derived via annular ring is **0.15 mm**. The JLCPCB Standard PCB profile documents a **0.18 mm minimum** for the applicable two-layer, nominal one-ounce condition, so the result is **FAIL**. The UI exposes the requirement quality, condition, comparison, source page, and verification date. The board also has 19 BOM missing-MPN warnings; these are procurement findings and do not count as geometry violations.

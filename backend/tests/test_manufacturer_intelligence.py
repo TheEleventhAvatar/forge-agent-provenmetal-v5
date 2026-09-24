@@ -90,4 +90,38 @@ class ManufacturerIntelligenceTests(unittest.TestCase):
         self.assertIn('Hole-to-Hole Spacing',row['reason'])
         self.assertTrue(row['source']['url'].startswith('https://jlcpcb.com/'))
 
+    def test_evidence_chain_pass_fail_unknown_conditional_and_quality(self):
+        from app.manufacturing.intelligence import requirement_quality
+        pcb=PCBModel(file='x',layers={'F.Cu','B.Cu'},copper_layers=['F.Cu','B.Cu'],bounds={'width_mm':40,'height_mm':30},segments=[{'width_mm':.25}],vias=[{'x':1,'y':1,'drill_mm':.3,'size_mm':.6,'layers':['F.Cu','B.Cu']}])
+        pcb.board_thickness_mm=1.6; pcb.material='FR-4'; pcb.copper_thickness_by_layer_mm={'F.Cu':.0348,'B.Cu':.0348}
+        req,routes=evaluate(pcb)
+        jlc=next(x for x in routes if x['manufacturer_id']=='jlcpcb' and x['process_id']=='standard_pcb')
+        trace=next(x for x in jlc['matrix'] if x['parameter']=='min_trace_width' and x['result']=='PASS')
+        self.assertEqual(trace['result'],'PASS')
+        self.assertEqual(trace['requirement_quality']['status'],'MEASURED')
+        self.assertEqual(trace['source']['manufacturer'],'JLCPCB')
+        self.assertTrue(trace['source']['url'].startswith('https://'))
+        self.assertIn('expression',trace['comparison'])
+        pcb.segments=[{'width_mm':.01}]
+        _,routes=evaluate(pcb)
+        jlc=next(x for x in routes if x['manufacturer_id']=='jlcpcb' and x['process_id']=='standard_pcb')
+        self.assertEqual(next(x for x in jlc['matrix'] if x['parameter']=='min_trace_width' and x['result']=='FAIL')['result'],'FAIL')
+        assembly=PCBModel(file='x',layers={'F.Cu','B.Cu'},bounds={'width_mm':40,'height_mm':30},footprints=[{'reference':'R1','library_id':'Resistor_SMD:R_0201_0603Metric'}])
+        _,routes=evaluate(assembly)
+        economic=next(x for x in routes if x['manufacturer_id']=='jlcpcb' and x['process_id']=='economic_pcba')
+        conditional=next(x for x in economic['matrix'] if x['parameter']=='min_package')
+        self.assertEqual(conditional['result'],'CONDITIONAL')
+        self.assertIn('process scope',conditional['reason'])
+        pcb=PCBModel(file='x',layers={'F.Cu','B.Cu'},bounds={'width_mm':40,'height_mm':30},segments=[{'width_mm':.25}],vias=[{'x':1,'y':1,'drill_mm':.3,'size_mm':.6,'layers':['F.Cu','B.Cu']}])
+        _,routes=evaluate(pcb)
+        pcbway=next(x for x in routes if x['manufacturer_id']=='pcbway' and x['process_id']=='standard_pcb')
+        unknown=next(x for x in pcbway['matrix'] if x['parameter']=='min_via_diameter')
+        self.assertEqual(unknown['result'],'UNKNOWN')
+        self.assertEqual(unknown['reason_code'],'NO_MANUFACTURER_DOCUMENTATION')
+        self.assertIsNone(unknown['source'])
+        quality=requirement_quality({'min_package':'0201','min_ic_pin_spacing_mm':.9,'min_bga_spacing_mm':None},PCBModel(file='x',footprints=[]))
+        self.assertEqual(quality['min_package']['status'],'METADATA_DERIVED')
+        self.assertEqual(quality['min_ic_pin_spacing_mm']['status'],'GEOMETRY_DERIVED')
+        self.assertEqual(quality['min_bga_spacing_mm']['status'],'NOT_APPLICABLE')
+
 if __name__=='__main__': unittest.main()

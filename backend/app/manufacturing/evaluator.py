@@ -1,5 +1,5 @@
 """Applicability-aware, evidence-first capability comparison."""
-from .intelligence import knowledge_base, extract_requirements, PARAMS, _condition_state
+from .intelligence import knowledge_base, extract_requirements, PARAMS, _condition_state, requirement_quality
 
 BASE = ["max_layers", "max_board_width", "max_board_height", "min_board_width", "min_board_height"]
 FAB = ["min_trace_width", "min_spacing", "min_drill", "min_via_hole", "min_via_diameter", "min_via_hole_spacing", "min_component_hole_spacing", "min_via_annular_ring", "min_pth_annular_ring"]
@@ -20,6 +20,7 @@ def aggregate_route_status(fabrication, assembly, procurement):
 
 def evaluate_routes(pcb=None, geo=None, drill_model=None):
     req=extract_requirements(pcb,geo,drill_model)
+    qualities=requirement_quality(req,pcb)
     has_board=pcb is not None or geo is not None
     vias=[v for v in getattr(pcb,"vias",[]) if v.get("drill_mm",0)>0]
     holes=[h for h in getattr(pcb,"through_holes",[]) if h.get("drill_mm",0)>0]
@@ -69,13 +70,17 @@ def evaluate_routes(pcb=None, geo=None, drill_model=None):
                     state="CONDITIONAL"; reason="The value is within a published recommendation, not a hard capability statement."
                 if cap["capability_type"]=="TYPICAL" and not passed:
                     state="CONDITIONAL"; reason="The PCB is below the technical table's typical package threshold, but the same official source also states support for a smaller package without clarifying process scope."
-            row={"parameter":parameter,"requirement":value,"requirement_unit":cap["unit"],"capability":cap["value"],"unit":cap["unit"],"conditions":cap["conditions"],"capability_type":cap["capability_type"],"status":state,"reason":reason,"source":cap["source"]}
+            expression=(f"package_order_index({value}) >= package_order_index({cap['value']})" if parameter=="min_package" else f"{value} {'in' if cap['operator']=='in' else '>=' if cap['operator']=='gte' else '<='} {cap['value']}")
+            comparison={"operator":cap["operator"],"passed":_compare(parameter,value,cap),"expression":expression,"basis":"ordered EIA package-size list" if parameter=="min_package" else "numeric/value comparison"} if state in {"PASS","FAIL"} else None
+            row={"parameter":parameter,"requirement":value,"requirement_unit":cap["unit"],"requirement_quality":qualities.get(PARAMS.get(parameter),{}),"capability":cap["value"],"unit":cap["unit"],"capability_type":cap["capability_type"],"operator":cap["operator"],"conditions":cap["conditions"],"condition_result":condition,"comparison":comparison,"status":state,"result":state,"reason":reason,"source":{**cap["source"],"manufacturer":manufacturer["name"],"verification_date":cap["last_verified_at"]}}
             rows.append(row)
             if state!="NOT_APPLICABLE": by_parameter.setdefault(parameter,[]).append(row)
         for parameter in not_applicable:
             if not any(r["parameter"]==parameter and r["status"]=="NOT_APPLICABLE" for r in rows):
                 rows.append({"parameter":parameter,"requirement":None,"capability":None,"conditions":{},"status":"NOT_APPLICABLE","reason":"The PCB has no feature in this capability scope."})
         summary=[]
+        documented_by_parameter={}
+        for claim in process["capabilities"]: documented_by_parameter.setdefault(claim["parameter"],claim)
         for parameter in applicable:
             ambiguous=None
             options=by_parameter.get(parameter,[])
@@ -89,16 +94,23 @@ def evaluate_routes(pcb=None, geo=None, drill_model=None):
             if chosen: reason=chosen["reason"]; reason_code="CONDITION_UNRESOLVED" if state=="CONDITIONAL" else None
             elif any(x["parameter"]==parameter and x["status"]=="NOT_APPLICABLE" for x in rows):
                 reason="Sourced capabilities exist, but none applies to the detected configuration."; reason_code="NO_APPLICABLE_SOURCE_CLAIM"
+            elif value is None and parameter in documented_by_parameter:
+                claim=documented_by_parameter[parameter]
+                reason="Manufacturer capability is documented, but the PCB input does not contain the data needed to evaluate this requirement."; reason_code="BOARD_INPUT_MISSING"
+                chosen={"capability":claim["value"],"capability_type":claim["capability_type"],"conditions":claim["conditions"],"comparison":None,"source":{**claim["source"],"manufacturer":manufacturer["name"],"verification_date":claim["last_verified_at"]}}
             elif value is None:
-                reason="The board input does not provide enough data to evaluate this applicable requirement."; reason_code="BOARD_INPUT_MISSING"
+                reason="The PCB input does not provide enough data to extract this requirement, and no sufficient manufacturer capability evidence is recorded."; reason_code="BOARD_INPUT_AND_SOURCE_UNKNOWN"
             else:
                 ambiguous=next((u for u in process.get("unresolved_evidence",[]) if u["parameter"]==parameter),None)
                 if ambiguous:
                     reason=ambiguous["source"]["evidence_note"]; reason_code="SOURCE_SEMANTICS_UNRESOLVED"
                 else:
                     reason="No sufficient official capability evidence is recorded for this process parameter."; reason_code="NO_MANUFACTURER_DOCUMENTATION"
-            summary.append({"parameter":parameter,"requirement":value,"status":state,"reason":reason,"reason_code":reason_code,"source":ambiguous["source"] if ambiguous and reason_code=="SOURCE_SEMANTICS_UNRESOLVED" else None})
-            rows.append({**summary[-1],"capability":None,"conditions":{}})
+            cap_source=chosen.get("source") if chosen else (ambiguous["source"] if ambiguous and reason_code=="SOURCE_SEMANTICS_UNRESOLVED" else None)
+            if cap_source and "manufacturer" not in cap_source:
+                cap_source={**cap_source,"manufacturer":manufacturer["name"],"verification_date":cap_source.get("retrieval_date")}
+            summary.append({"parameter":parameter,"requirement":value,"requirement_quality":qualities.get(PARAMS.get(parameter),{}),"capability":chosen.get("capability") if chosen else None,"capability_type":chosen.get("capability_type") if chosen else ("UNSPECIFIED" if reason_code=="NO_MANUFACTURER_DOCUMENTATION" else None),"conditions":chosen.get("conditions",{}) if chosen else {},"result":state,"status":state,"reason":reason,"reason_code":reason_code,"comparison":chosen.get("comparison") if chosen else None,"source":cap_source})
+            rows.append(summary[-1])
         counts={s:sum(x["status"]==s for x in summary) for s in ("PASS","FAIL","CONDITIONAL","UNKNOWN")}
         counts["NOT_APPLICABLE"]=len(not_applicable)
         coverage=round(100*(counts["PASS"]+counts["FAIL"])/len(applicable),1) if applicable else 0.0
