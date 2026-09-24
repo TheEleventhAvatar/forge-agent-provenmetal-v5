@@ -1,6 +1,6 @@
 # ForgeAgent
 
-**Agentic PCB manufacturing review engine** â€” Gerber, Excellon, KiCad PCB and BOM inputs with deterministic geometry checks, MPN completeness checks, sourced manufacturer capability matching, and an inspectable agent trace.
+**Agentic PCB manufacturing review engine**  Gerber, Excellon, KiCad PCB and BOM inputs with deterministic geometry checks, MPN completeness checks, sourced manufacturer capability matching, and an inspectable agent trace.
 
 
 
