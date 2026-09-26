@@ -15,10 +15,12 @@ if frontend_origin:
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=allowed_origins,
-    allow_origin_regex=r"https://forge-agent-frontend-[a-z0-9]+\.onrender\.com",
-    allow_credentials=False,
-    allow_methods=["GET","POST","OPTIONS"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://forge-agent-provenmetal-v5.vercel.app",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
     allow_headers=["*"],
 )
 
