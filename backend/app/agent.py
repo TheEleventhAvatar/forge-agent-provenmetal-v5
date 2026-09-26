@@ -33,7 +33,7 @@ class ForgeAgent:
    else:
     drc=run_kicad_drc(k,files[k]); parsed=drc.get('parsed'); drc['source']='kicad_cli'
    validation={"status":"available" if parsed else "VALIDATION_UNAVAILABLE","source":drc.get('source'),"artifact":drc.get('artifact'),"kicad_summary":{"violation_count":parsed.get('violation_count',parsed.get('total_violations')),"unconnected_item_count":parsed.get('unconnected_item_count',0),"total_diagnostics":parsed.get('total_diagnostics',len(parsed.get('violations',[]))),"parsed_violations":len(parsed.get('violations',[])),"parsed_unconnected_items":len(parsed.get('unconnected_items',[])),"total_violations":parsed.get('violation_count',parsed.get('total_violations')),"count_discrepancy":parsed.get("violation_count_discrepancy",parsed.get("count_discrepancy",False)),"count_note":"Report headline count differs from parsed DRC violation records." if parsed.get("violation_count_discrepancy",parsed.get("count_discrepancy")) else None} if parsed else None,"reason":drc.get('reason')}
-   validation["cross_validation"]=cross_validate(findings,parsed,pcb)
+   validation["cross_validation"]=cross_validate(findings,parsed,pcb) if parsed else {"summary":{"status":"VALIDATION_UNAVAILABLE","corroborated":0,"forgeagent_only":len(findings),"kicad_only":0,"unconnected_items":0,"unmapped":0}}
    self.step('cross-validator','map_drc_to_forgeagent_evidence',validation["cross_validation"]["summary"] if parsed else {'status':'VALIDATION_UNAVAILABLE'})
   self.step('bom-agent','inspect_component_risk',{'rows':len(rows)});bom_findings=inspect_bom(rows);findings+=bom_findings
   self.step('capability-agent','extract_requirements_and_evaluate_manufacturer_processes')
