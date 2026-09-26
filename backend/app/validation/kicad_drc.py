@@ -1,16 +1,36 @@
 from __future__ import annotations
 
+import os
 import re
 import shutil
 import subprocess
 import tempfile
 from pathlib import Path
 
-DEFAULT_CLI = Path(r"C:\Users\avita\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe")
+DEFAULT_WINDOWS_CLI = Path(r"C:\Users\avita\AppData\Local\Programs\KiCad\10.0\bin\kicad-cli.exe")
+
+
+def find_kicad_cli(explicit: str | Path | None = None) -> str | None:
+    candidates = []
+    configured = explicit or os.getenv("KICAD_CLI_PATH")
+    if configured:
+        candidates.append(str(configured))
+    path_cli = shutil.which("kicad-cli")
+    if path_cli:
+        candidates.append(path_cli)
+    if os.name == "nt":
+        candidates.append(str(DEFAULT_WINDOWS_CLI))
+    for candidate in candidates:
+        p = Path(candidate)
+        if p.is_file():
+            return str(p)
+        resolved = shutil.which(candidate)
+        if resolved:
+            return resolved
+    return None
 
 
 def parse_drc_report(text: str) -> dict:
-    """Parse KiCad's human-readable .rpt report into stable normalized records."""
     total = re.search(r"Found\s+(\d+)\s+DRC violations", text, re.I)
     unconnected_total = re.search(r"Found\s+(\d+)\s+unconnected pads", text, re.I)
     records = []
@@ -55,7 +75,6 @@ def parse_drc_report(text: str) -> dict:
             "parsed_unconnected_item_count": len(unconnected),
             "violation_count_discrepancy": violation_count != len(violations),
             "unconnected_count_discrepancy": unconnected_count != len(unconnected),
-            # Backward-compatible names now have strict DRC-violation semantics.
             "total_violations": violation_count, "parsed_record_count": len(records),
             "count_discrepancy": violation_count != len(violations),
             "violations": violations, "unconnected_items": unconnected,
@@ -63,17 +82,15 @@ def parse_drc_report(text: str) -> dict:
 
 
 def run_kicad_drc(board_name: str, board_text: str, cli: str | Path | None = None) -> dict:
-    """Run the KiCad CLI when installed; the report is returned as an artifact."""
-    executable = Path(cli) if cli else DEFAULT_CLI
-    executable = executable if executable.is_file() else (Path(shutil.which("kicad-cli")) if shutil.which("kicad-cli") else None)
+    executable = find_kicad_cli(cli)
     if not executable:
-        return {"available": False, "reason": "KiCad CLI is not installed at the configured path.", "artifact": None, "parsed": None}
+        return {"available": False, "reason": "KiCad CLI is not installed or not discoverable on PATH.", "artifact": None, "parsed": None}
     with tempfile.TemporaryDirectory(prefix="forge-kicad-") as work:
         board = Path(work) / Path(board_name).name
         report = Path(work) / "kicad-drc.rpt"
         board.write_text(board_text, encoding="utf-8")
         try:
-            result = subprocess.run([str(executable), "pcb", "drc", "--output", str(report), str(board)], capture_output=True, text=True, timeout=180)
+            result = subprocess.run([executable, "pcb", "drc", "--output", str(report), str(board)], capture_output=True, text=True, timeout=180)
         except (OSError, subprocess.TimeoutExpired) as exc:
             return {"available": False, "reason": str(exc), "artifact": None, "parsed": None}
         if not report.exists():
