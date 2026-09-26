@@ -2,7 +2,7 @@ import React,{useMemo,useState,useEffect} from 'react';
 import {createRoot} from 'react-dom/client';
 import {Upload,Factory,FileCode2,ChevronDown,Crosshair,Layers3,MousePointer2} from 'lucide-react';
 import './style.css';
-const API=import.meta.env.VITE_API_BASE_URL||'http://localhost:8000';
+const API=(import.meta.env.VITE_API_BASE_URL||'http://localhost:8000').replace(/\/$/,'');
 const REQUIREMENT_GROUPS=[['Board',['board_width_mm','board_height_mm','layer_count','board_thickness_mm','material']],['Copper',['min_trace_width_mm','min_spacing_mm','copper_weight_oz','inner_copper_weight_oz']],['Drilling',['min_drill_mm','min_via_hole_mm','min_via_diameter_mm','min_via_hole_spacing_mm','min_via_annular_ring_mm','min_pth_annular_ring_mm']],['Assembly',['min_package','min_ic_pin_spacing_mm','min_bga_spacing_mm']]];
 const requirementLabel=k=>({'min_package':'Smallest recognized passive package','min_ic_pin_spacing_mm':'IC pin spacing','min_bga_spacing_mm':'BGA spacing','copper_weight_oz':'Outer copper weight','inner_copper_weight_oz':'Inner copper weight','min_via_annular_ring_mm':'Via annular ring','min_pth_annular_ring_mm':'PTH annular ring'}[k]||k.replaceAll('_',' '));
 const comparisonText=m=>{if(!m.comparison)return 'not performed';if(m.comparison.passed===false&&m.operator==='gte')return `${m.requirement} < ${m.capability}`;if(m.comparison.passed===false&&m.operator==='lte')return `${m.requirement} > ${m.capability}`;return m.comparison.expression};
