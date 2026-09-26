@@ -1,10 +1,12 @@
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+import os
 from .agent import ForgeAgent
 from .manufacturing.intelligence import knowledge_base, PRICE_DATA_SOURCE
 
 app=FastAPI(title="ForgeAgent",version="0.3.0",description="Evidence-backed agentic PCB DFM and manufacturing review")
-app.add_middleware(CORSMiddleware,allow_origins=["*"],allow_methods=["*"],allow_headers=["*"])
+frontend_origin=os.getenv("FRONTEND_ORIGIN","*")
+app.add_middleware(CORSMiddleware,allow_origins=["*"] if frontend_origin=="*" else [frontend_origin],allow_methods=["*"],allow_headers=["*"])
 
 @app.get("/health")
 def health(): return {"status":"ok","service":"forge-agent"}
@@ -23,8 +25,6 @@ async def analyze(files:list[UploadFile]=File(...)):
     if not payload: raise HTTPException(400,"Upload Gerber, Excellon drill and/or BOM CSV files")
     agent=ForgeAgent(); findings,matches,trace,metrics,plan,quote,validation=agent.analyze(payload)
     weights={"critical":40,"high":20,"medium":4,"low":1}
-    # Only deterministic confirmed fabrication/assembly violations can dominate
-    # manufacturing risk. Procurement readiness remains visible but is capped.
     fabrication=sum(weights.get(f.severity,0) for f in findings if f.status=="VIOLATION" and f.category in {"fabrication","assembly"})
     procurement=sum(weights.get(f.severity,0) for f in findings if f.category in {"procurement","component_risk"})
     warning_risk=sum(2 for f in findings if f.status=="WARNING" and f.category in {"fabrication","assembly"})
