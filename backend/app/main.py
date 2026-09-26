@@ -9,16 +9,14 @@ frontend_origin=os.getenv("FRONTEND_ORIGIN","").strip().rstrip("/")
 allowed_origins=[
     "http://localhost:5173",
     "http://localhost:4173",
+    "https://forge-agent-provenmetal-v5.vercel.app"
 ]
 if frontend_origin:
     allowed_origins.append(frontend_origin)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "https://forge-agent-provenmetal-v5.vercel.app",
-    ],
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
