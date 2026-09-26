@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: forge-agent-api
+    runtime: docker
+    rootDir: backend
+    plan: free
+    healthCheckPath: /health
+    autoDeploy: true
+
+  - type: web
+    name: forge-agent-frontend
+    runtime: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: dist
+    autoDeploy: true
+    envVars:
+      - key: VITE_API_BASE_URL
+        value: https://forge-agent-api.onrender.com
