@@ -5,8 +5,22 @@ from .agent import ForgeAgent
 from .manufacturing.intelligence import knowledge_base, PRICE_DATA_SOURCE
 
 app=FastAPI(title="ForgeAgent",version="0.3.0",description="Evidence-backed agentic PCB DFM and manufacturing review")
-frontend_origin=os.getenv("FRONTEND_ORIGIN","*")
-app.add_middleware(CORSMiddleware,allow_origins=["*"] if frontend_origin=="*" else [frontend_origin],allow_methods=["*"],allow_headers=["*"])
+frontend_origin=os.getenv("FRONTEND_ORIGIN","").strip().rstrip("/")
+allowed_origins=[
+    "http://localhost:5173",
+    "http://localhost:4173",
+]
+if frontend_origin:
+    allowed_origins.append(frontend_origin)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=allowed_origins,
+    allow_origin_regex=r"https://forge-agent-frontend-[a-z0-9]+\\.onrender\\.com",
+    allow_credentials=False,
+    allow_methods=["GET","POST","OPTIONS"],
+    allow_headers=["*"],
+)
 
 @app.get("/health")
 def health(): return {"status":"ok","service":"forge-agent"}
