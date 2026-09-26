@@ -90,7 +90,7 @@ def run_kicad_drc(board_name: str, board_text: str, cli: str | Path | None = Non
         report = Path(work) / "kicad-drc.rpt"
         board.write_text(board_text, encoding="utf-8")
         try:
-            result = subprocess.run([executable, "pcb", "drc", "--output", str(report), str(board)], capture_output=True, text=True, timeout=180)
+            result = subprocess.run([executable, "pcb", "drc", "--output", str(report), str(board)], capture_output=True, text=True, timeout=25)
         except (OSError, subprocess.TimeoutExpired) as exc:
             return {"available": False, "reason": str(exc), "artifact": None, "parsed": None}
         if not report.exists():
