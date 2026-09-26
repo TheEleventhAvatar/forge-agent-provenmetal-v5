@@ -18,9 +18,10 @@ https://github.com/user-attachments/assets/8f0b3421-51b5-40ef-82c3-3a1e90176aed
 2. Parse manufacturing geometry into structured evidence.
 3. Run deterministic DFM checks: minimum feature, clearance, drill size.
 4. Inspect BOM rows for missing MPNs; no live component sourcing data is claimed.
-5. Match the board against sourced manufacturer capability profiles.
-6. Emit an agent trace showing every stage and its evidence.
-7. Produce a structured manufacturing-review result.
+5. Compare it with Kicad DRC for cross verification
+6. Match the board against sourced manufacturer capability profiles.
+7. Emit an agent trace showing every stage and its evidence.
+8. Produce a structured manufacturing-review result.
 
 ## Run
 
